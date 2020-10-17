@@ -1,14 +1,14 @@
 import time
 import random
 
-
+# Game Starts
 def start_game():
     Object = []
     Animals = random.choice(["Lion", "Tiger", "Dragon"])
     starting_Intro(Object, Animals)
     Forest(Object, Animals)
 
-
+#Introduction
 def starting_Intro(Object, Animals):
     print_line("\t Welcome to Your Dream Adventure!")
     print_line("\n\n \t\t *In your Dreams*\n")
@@ -22,15 +22,15 @@ def starting_Intro(Object, Animals):
 
 
 def Forest(Object, Animals):
-    print_line("Enter 'Tree': to hide behind the trees...!")
-    print_line("Enter 'Hut': to hide in hut behind ...!")
+    print_line("Enter 'Tree': to hide behind the trees...! ")
+    print_line("Enter 'Hut': to hide in hut behind ...! ")
     print_line("What would you like to do?\n")
     while True:
         Option = input("(Please enter what would you do...)\n")
         if Option == "Tree":
             Trees(Object, Animals)
             break
-        elif Option == "Hut":
+        elif Option == " Hut ":
             Hut(Object, Animals)
             break
 
@@ -46,7 +46,7 @@ def Trees(Object, Animals):
     while True:
         choice2 = input("Would you like to (Fight) fight or (Run) "
                         "run away?")
-        if choice2 == "Fight":
+        if choice2 == " Fight ":
             if "sword" in Object:
                 print_line("\nAs the " + Animals + " moves to attack,")
                 print_line(" you unsheath a sword.")
